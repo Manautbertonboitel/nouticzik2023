@@ -1,0 +1,19 @@
+.header__main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header__main__navs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+.header__comment {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
