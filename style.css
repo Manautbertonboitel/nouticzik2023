@@ -17,3 +17,32 @@
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    max-width: 1000px;
+}
+
+#hero, #presentation, #infos {
+    max-width: 750px;
+}
+
+.calltoaction__link {
+    max-width: 958px;
+    max-height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calltoaction__link img {
+    position: relative;
+    width: 100%;
+}
+
+
