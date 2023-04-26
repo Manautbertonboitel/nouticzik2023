@@ -71,6 +71,23 @@ section {
 
 .presentation__photos {
     width: 50%;
+    border: solid 1px black;
+}
+
+.presentation__photos img {
+    width: 317px;
+    height: 445px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.presentation__photos :first-child {
+    right: -30px;
+    background-color: black;
+}
+
+.presentation__photos :last-child {
+    right: 10px;
 }
 
 #programmation {
