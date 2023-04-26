@@ -26,23 +26,66 @@ main {
 
 section {
     max-width: 1000px;
+    margin: 25px 0;
 }
 
 #hero, #presentation, #infos {
     max-width: 750px;
 }
 
-.calltoaction__link {
+#calltoaction {
+    width: 100%;
     max-width: 958px;
     max-height: 220px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-image: url(img/background.png);
+    background-size: cover;
+    border-radius: 30px;
 }
 
-.calltoaction__link img {
-    position: relative;
-    width: 100%;
+#calltoaction a {
+    margin: 100px 0;
+    padding: 13.5px 30px;
+    border: solid 1px white;
+    border-radius: 2000px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
 }
 
+#calltoaction a:hover {
+    background-color: white;
+    color: black;
+}
+
+#presentation {
+    display: flex;
+}
+
+.presentation__content {
+    width: 50%;
+}
+
+.presentation__photos {
+    width: 50%;
+}
+
+#programmation {
+    display: flex;
+    justify-content: center;
+}
+
+.programmation__showcase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.programmation__showcase__item {
+    min-width: 300px;
+    max-width: 317px;
+    max-height: 445px;
+}
 
