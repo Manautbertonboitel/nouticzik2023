@@ -30,7 +30,7 @@ section {
 }
 
 #hero, #presentation, #infos {
-    max-width: 750px;
+    max-width: 880px;
 }
 
 #calltoaction {
@@ -62,15 +62,23 @@ section {
 }
 
 #presentation {
-    display: flex;
+
+}
+
+.presentation__title {
+
 }
 
 .presentation__content {
-    width: 50%;
+    display: flex;
 }
 
-.presentation__photos {
+.presentation__content__text {
     width: 50%;
+}
+/*.presentation__photos {
+    width: 460px;
+    height: 795px;
     border: solid 1px black;
 }
 
@@ -79,15 +87,31 @@ section {
     height: 445px;
     position: relative;
     border-radius: 25px;
+}*/
+
+.presentation__content__photos {
+    position: relative;
+    top: -25px;
+    aspect-ratio: 1 / 1.41!important;
+    width: 50%;
+    border: solid 1px black;
 }
 
-.presentation__photos :first-child {
-    right: -30px;
+.presentation__content__photos img {
+    width: 70%;
+    aspect-ratio: 1 / 1.41!important;
+    position: relative;
+    border-radius: 25px;
+}
+
+.presentation__content__photos :first-child {
+    right: -130px;
     background-color: black;
 }
 
-.presentation__photos :last-child {
-    right: 10px;
+.presentation__content__photos :last-child {
+    bottom: 100px;
+    right: 0;
 }
 
 #programmation {
