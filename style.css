@@ -1,13 +1,74 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    transition: all .1s ease-out;
+    --main-content-padding: 0 12px;
+}
+
+span {
+    font-weight: 700;
+}
+
+header {
+    text-transform: uppercase;
+    
+}
+
+#header__container {
+    background-color: black;
+    padding: var(--main-content-padding);
+}
+
 .header__main {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1088px;
+    height: 70px;
+    margin: auto;
+}
+
+.header__main__title {
+    font-size: 34px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
 }
 
 .header__main__navs {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    max-width: 650px;
+}
+
+.header__main__navs a {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.header__main__navs__tickets {
+    padding: 13.5px 25px 11px;
+    color: black!important;
+    background-color: white;
+    border-radius: 2000px;
+}
+
+.header__main__navs__tickets svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.header__main__navs__tickets:hover {
+    background-color: rgb(212, 212, 212);
 }
 
 .header__comment {
@@ -15,6 +76,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #E9E9E9;
+    font-size: 16px;
+    text-align: center;
 }
 
 main {
@@ -25,48 +89,120 @@ main {
 }
 
 section {
-    max-width: 1000px;
-    margin: 25px 0;
+    max-width: 1088px;
+    margin: 25px auto;
 }
 
-#hero, #presentation, #infos {
-    max-width: 880px;
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#calltoaction {
+.hero__content h1 {
+    font-size: 83px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 80px 0 0;
+}
+
+.hero__content h2 {
+    font-size: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.hero__content p {
+    font-size: 16px;
+    max-width: 536px;
+    margin-top: 50px;
+}
+
+.hero__content__tickets {
+    padding: 13.5px 25px 11px;
+    background-color: black;
+    border-radius: 2000px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    margin: 60px auto;
+}
+
+.hero__content__tickets svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.hero__content__tickets:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+#lineuplink {
     width: 100%;
-    max-width: 958px;
+
     max-height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(img/background.png);
+    background-image: url(img/musicians.png);
     background-size: cover;
+    background-position: center;
     border-radius: 30px;
 }
 
-#calltoaction a {
+#lineuplink a {
     margin: 100px 0;
     padding: 13.5px 30px;
-    border: solid 1px white;
+    border: solid .5px white;
     border-radius: 2000px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
     color: white;
     overflow: hidden;
+    backdrop-filter: blur(50px) brightness(125%);
 }
 
-#calltoaction a:hover {
+#lineuplink svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+#lineuplink a:hover {
     background-color: white;
     color: black;
 }
 
 #presentation {
-
+    margin-top: 140px;
 }
 
 .presentation__title {
+    
+}
 
+.presentation__title h1 {
+    font-size: 83px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.presentation__title h2 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .presentation__content {
@@ -76,6 +212,18 @@ section {
 .presentation__content__text {
     width: 50%;
 }
+
+.presentation__content__text h3 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 100px 0 0;
+}
+
+.presentation__content__text p {
+    max-width: 518px;
+}
+
+
 /*.presentation__photos {
     width: 460px;
     height: 795px;
