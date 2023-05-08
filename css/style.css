@@ -689,6 +689,10 @@ section {
         word-break: break-all;
     }
 
+    #hero h1 {
+        margin-top: 10px;
+    }
+
     .hero__content__tickets {
         margin: 30px auto;
         margin-bottom: 0;
