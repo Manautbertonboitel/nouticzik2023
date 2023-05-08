@@ -199,7 +199,7 @@ a:hover .feather-facebook {
     font-weight: 700;
     vertical-align: middle;
 
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .header__main__navs__button__container .header__main__navs__tickets svg {
@@ -354,6 +354,10 @@ a:hover .feather-facebook {
     }
 
     .header__main__navs {
+        display: none;
+    }
+
+    .header__comment {
         display: none;
     }
 }

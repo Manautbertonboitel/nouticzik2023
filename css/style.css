@@ -181,6 +181,7 @@ section {
     color: var(--color-quaternary);
     overflow: hidden;
     backdrop-filter: blur(50px) brightness(125%);
+    -webkit-backdrop-filter: blur(50px) brightness(125%);
 }
 
 #lineuplink svg {
@@ -688,6 +689,19 @@ section {
         word-break: break-all;
     }
 
+    .hero__content__tickets {
+        margin: 30px auto;
+        margin-bottom: 0;
+    }
+
+    #lineuplink {
+        margin-top: 0;
+    }
+
+    #presentation {
+        margin-top: 50px;
+    }
+
     .presentation__content {
         flex-direction: column-reverse;
     }
@@ -704,6 +718,26 @@ section {
         width: 100%;
         margin-left: 0;
         margin-top: 50px;
+    }
+
+    #programmation {
+        margin-top: 50px;
+    }
+
+    .programmation__content__showcase {
+        margin-top: 50px;
+    }
+
+    #infos {
+        margin-top: 50px;
+    }
+
+    #infos h3 {
+        margin-top: 35px;
+    }
+
+    .infos__content__tickets {
+        margin-top: 19px;
     }
 }
 
