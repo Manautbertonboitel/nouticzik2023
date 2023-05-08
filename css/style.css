@@ -9,6 +9,11 @@
     --color-secondary: #e88402;
     --color-tertiary: #282828;
     --color-quaternary: #fffff4;
+
+    --font-size-title: 64px;
+    --font-size-subtitle: 32px;
+    --font-size-text: 16px;
+    --font-size-text-uppercase: 14px;
 }
 
 body {
@@ -58,7 +63,7 @@ section {
 }
 
 .hero__content h1 {
-    font-size: 83px;
+    font-size: 80px;
     text-transform: uppercase;
     text-align: center;
     margin: 80px 0 0;
@@ -66,8 +71,8 @@ section {
 }
 
 .hero__content h2 {
-    font-size: 44px;
-    line-height: 44px;
+    font-size: var(--font-size-subtitle);
+    line-height: var(--font-size-subtitle);
     text-transform: uppercase;
     margin: 0;
     text-align: center;
@@ -214,13 +219,13 @@ section {
 }
 
 .presentation__title h1 {
-    font-size: 83px;
+    font-size: var(--font-size-title);
     text-transform: uppercase;
     margin: 0;
 }
 
 .presentation__title h2 {
-    font-size: 44px;
+    font-size: var(--font-size-subtitle);
     text-transform: uppercase;
     margin: 0;
 }
@@ -234,7 +239,7 @@ section {
 }
 
 .presentation__content__text h3 {
-    font-size: 44px;
+    font-size: var(--font-size-subtitle);
     text-transform: uppercase;
     margin: 100px 0 0;
 
@@ -377,13 +382,13 @@ section {
 }
 
 .programmation__title h1 {
-    font-size: 83px;
+    font-size: var(--font-size-title);
     text-transform: uppercase;
     margin: 0;
 }
 
 .programmation__title h2 {
-    font-size: 44px;
+    font-size: var(--font-size-subtitle);
     text-transform: uppercase;
     margin: 0;
 }
@@ -504,19 +509,19 @@ section {
 }
 
 .infos__title h1 {
-    font-size: 83px;
+    font-size: var(--font-size-title);
     text-transform: uppercase;
     margin: 0;
 }
 
 .infos__title h2 {
-    font-size: 44px;
+    font-size: var(--font-size-subtitle);
     text-transform: uppercase;
     margin: 0;
 }
 
 .infos__content h3 {
-    font-size: 44px;
+    font-size: var(--font-size-subtitle);
     text-transform: uppercase;
     margin: 0;
     margin-top: 60px;
