@@ -1,0 +1,83 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    transition: all .1s ease-out;
+
+
+    /* VARIABLES */
+
+    --color-primary: #ff5410;
+    --color-secondary: #e88402;
+    --color-tertiary: #282828;
+    --color-quaternary: #fffff4;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    transition: all .1s ease-out;
+
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+span {
+    font-weight: 700;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* || ANIMATIONS */
+
+/* Background gradient */
+
+@-webkit-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+
+@-moz-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+
+@keyframes background-gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}

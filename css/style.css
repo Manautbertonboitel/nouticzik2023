@@ -1,0 +1,714 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    transition: all .1s ease-out;
+
+
+    /* VARIABLES */
+
+    --color-primary: #ff5410;
+    --color-secondary: #e88402;
+    --color-tertiary: #282828;
+    --color-quaternary: #fffff4;
+}
+
+body {
+    background-color: var(--color-quaternary);
+}
+
+span {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-tertiary);
+}
+
+section {
+    max-width: 1088px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* SECTION Hero */
+
+#hero {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__container {
+    max-width: 1088px;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content h1 {
+    font-size: 83px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 80px 0 0;
+    color: var(--color-tertiary);
+}
+
+.hero__content h2 {
+    font-size: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero__content p {
+    font-size: 16px;
+    max-width: 536px;
+    margin-top: 50px;
+}
+
+.hero__content__tickets {
+    padding: 13.5px 25px 11px;
+    background-color: var(--color-tertiary);
+    border-radius: 2000px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-quaternary);
+    margin: 60px auto;
+
+    border: 1px solid transparent;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+}
+
+.hero__content__tickets svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.hero__content__tickets:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.hero__content__tickets:hover svg g line {
+    stroke: var(--color-primary);
+}
+
+#hero {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__container {
+    max-width: 1088px;
+}
+
+/* Link to prog section */
+
+#lineuplink {
+    max-width: 1088px;
+}
+
+.lineuplink__outline {
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--color-primary);
+}
+
+.lineuplink__container {
+    width: 100%;
+
+    max-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/musicians.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.lineuplink__container a {
+    margin: 100px 0;
+    padding: 13.5px 30px;
+    border: solid .5px var(--color-quaternary);
+    border-radius: 2000px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-quaternary);
+    overflow: hidden;
+    backdrop-filter: blur(50px) brightness(125%);
+}
+
+#lineuplink svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+#lineuplink a:hover {
+    background-color: var(--color-quaternary);
+    color: var(--color-tertiary);
+}
+
+#lineuplink a:hover svg g line {
+    stroke: var(--color-tertiary);
+}
+
+/* Festival presentation section */
+
+#presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.presentation__container {
+    max-width: 1088px;
+}
+
+.presentation__title h1 {
+    font-size: 83px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.presentation__title h2 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.presentation__content {
+    display: flex;
+}
+
+.presentation__content__text {
+    width: 50%;
+}
+
+.presentation__content__text h3 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 100px 0 0;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.presentation__content__text p {
+    max-width: 518px;
+}
+
+.presentation__content__text__infos {
+    margin-top: 70px;
+    max-width: 350px!important;
+}
+
+.presentation__content__text__links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 270px;
+}
+
+.presentation__content__text__morephotos {
+    padding: 13.5px 25px 11px;
+    background-color: var(--color-tertiary);
+    border-radius: 2000px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-quaternary);
+
+    border: 1px solid transparent;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+}
+
+.presentation__content__text__morephotos svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.presentation__content__text__morephotos:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.presentation__content__text__morephotos:hover svg g line {
+    stroke: var(--color-primary);
+}
+
+.presentation__content__text__links__social {
+    width: 40.59px;
+    height: 40.59px;
+}
+
+.presentation__content__text__links__social svg{
+    width: 40.59px;
+    height: 40.59px;
+    fill: var(--color-tertiary);
+}
+
+.presentation__content__text__links__social .cls-1{
+    fill: var(--color-tertiary);
+}
+
+.presentation__content__text__links__social svg:hover .cls-1{
+    fill: var(--color-primary);
+}
+
+.presentation__content__photos {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.presentation__content__photos__outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--color-primary);
+}
+
+.presentation__content__photos__outline img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* 2023 Prog section */
+
+#programmation {
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programmation__container {
+    max-width: 1088px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* padding: 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px; */
+}
+
+.programmation__title h1 {
+    font-size: 83px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.programmation__title h2 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.programmation__content {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.programmation__content__showcase {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+.programmation__content__showcase__item {
+    width: 270px;
+    aspect-ratio: 1 / 1.5;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 25px;
+    padding: 20px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* .programmation__content__showcase__item:last-of-type {
+    margin-right: auto;
+} */
+
+
+.programmation__content__showcase__item h3 {
+    font-size: 40px;
+    margin: 0;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.programmation__content__showcase__item h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.programmation__content__showcase__item img {
+    filter: saturate(0%);
+    aspect-ratio: 1.1;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.programmation__content__showcase__item:hover img {
+    filter: saturate(100%);
+}
+
+.programmation__content__showcase__item__integration {
+    /* background-color: #282828; */
+    border-radius: 12px;
+    border: 1px solid var(--color-primary);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programmation__content__showcase__item__integration a {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-quaternary);
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 13.5px 25px 11px;
+    color: var(--color-tertiary)!important;
+    background-color: var(--color-quaternary);
+    border-radius: 2000px;
+}
+
+.programmation__content__showcase__item__integration svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.programmation__content__showcase__item__integration a:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+/* Infos section (date, localisation, etc.) */
+
+#infos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #E9E9E9; */
+}
+
+.infos__container {
+    max-width: 730px;
+    text-transform: uppercase;
+}
+
+.infos__title h1 {
+    font-size: 83px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.infos__title h2 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.infos__content h3 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 35px;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.infos__content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+.infos__content li {
+    margin-top: 22px;
+}
+
+.infos__content__centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.infos__content__tickets {
+    padding: 13.5px 25px 11px;
+    background-color: var(--color-tertiary);
+    border-radius: 2000px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-quaternary);
+
+    border: 1px solid transparent;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+}
+
+.infos__content__tickets svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.infos__content__tickets:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.infos__content__tickets:hover svg g line {
+    stroke: var(--color-primary)
+}
+
+.infos__content__maps {
+    padding: 13.5px 25px 11px;
+    background-color: var(--color-tertiary);
+    border-radius: 2000px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-quaternary);
+
+    border: 1px solid transparent;
+
+    background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    background-size:5000% 100%;
+    animation: background-gradient 40s linear infinite;
+    animation-direction: alternate;
+}
+
+.infos__content__maps svg {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+}
+
+.infos__content__maps:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.infos__content__maps:hover svg g line {
+    stroke: var(--color-primary)
+}
+
+/* Maps section */
+
+#localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 1088px;
+}
+
+.maps {
+    border-radius: 25px;
+    width: 100%;
+}
+
+
+/* || ANIMATIONS */
+
+/* Background gradient */
+
+@-webkit-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+
+@-moz-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+
+@keyframes background-gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+
+
+
+/* || MEDIA QUERIES */
+
+/* Mobile phone - small device width */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px!important;
+        word-break: break-all;
+    }
+
+    .presentation__content {
+        flex-direction: column-reverse;
+    }
+
+    .presentation__content__text {
+        width: 100%;
+    }
+
+    .presentation__content__text h3{
+        margin-top: 50px;
+    }
+
+    .presentation__content__photos {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+/* extra small device width */
+
+@media (max-width: 600px) {
+
+}
