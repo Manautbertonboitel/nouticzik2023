@@ -14,6 +14,7 @@
     --font-size-subtitle: 32px;
     --font-size-text: 16px;
     --font-size-text-uppercase: 14px;
+    box-sizing: border-box;
 }
 
 body {
@@ -78,12 +79,12 @@ section {
     text-align: center;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -111,12 +112,12 @@ section {
     border: 1px solid transparent;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 .hero__content__tickets svg {
@@ -244,12 +245,12 @@ section {
     margin: 100px 0 0;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -289,12 +290,12 @@ section {
     border: 1px solid transparent;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 .presentation__content__text__morephotos svg {
@@ -426,16 +427,16 @@ section {
 
 
 .programmation__content__showcase__item h3 {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -504,8 +505,41 @@ section {
 }
 
 .infos__container {
-    max-width: 730px;
-    text-transform: uppercase;
+    /* max-width: 730px;
+    text-transform: uppercase; */
+}
+
+.infos__content__container {
+    display: flex;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.text-reversed {
+    margin-left: 15px;
+}
+
+.infos__content__text {
+    width: 50%;
+}
+
+.infos__content__photo {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+    margin: 20px 0 20px;
+    max-height: 400px;
+}
+
+.infos__content__photo img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    max-height: 400px;
 }
 
 .infos__title h1 {
@@ -528,12 +562,12 @@ section {
     margin-bottom: 35px;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -570,12 +604,12 @@ section {
     border: 1px solid transparent;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 .infos__content__tickets svg {
@@ -610,12 +644,12 @@ section {
     border: 1px solid transparent;
 
     background: rgb(255,77,0);
-    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 .infos__content__maps svg {
@@ -639,9 +673,11 @@ section {
 /* Maps section */
 
 #localisation {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    max-width: 1048px; */
 }
 
 .maps__container {
@@ -649,12 +685,10 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 20px;
     border: 1px solid var(--color-primary);
     border-radius: 30px;
-    width: 100%;
-    max-width: 1088px;
 }
 
 .maps {
@@ -689,6 +723,14 @@ section {
 /* Mobile phone - small device width */
 
 @media (max-width: 768px) {
+    main {
+        overflow-x: hidden;
+    }
+
+    section {
+        max-width: 85%!important;
+    }
+
     h1 {
         font-size: 60px!important;
         word-break: break-all;
@@ -725,8 +767,26 @@ section {
 
     .presentation__content__photos {
         width: 100%;
-        margin-left: 0;
         margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .presentation__content__photos__outline {
+        width: 100vw; 
+        margin-left: calc((-100vw + 100%) / 2);
+        margin-right: calc((-100vw + 100%) / 2);
+        border-radius: 0;
+        min-height: 350px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .presentation__content__photos__outline img {
+        width: 100vw; 
+        margin-left: calc((-100vw + 100%) / 2);
+        margin-right: calc((-100vw + 100%) / 2);
+        border-radius: 0;
+        min-height: 350px;
     }
 
     #programmation {
@@ -747,6 +807,37 @@ section {
 
     .infos__content__tickets {
         margin-top: 19px;
+    }
+
+    .infos__content__container {
+        flex-direction: column;
+    }
+
+    .infos__content__text, .infos__content__photo {
+        width: 100%;
+    }
+
+    .infos__content__photo {
+        width: 100vw; 
+        margin-left: calc((-100vw + 100%) / 2);
+        margin-right: calc((-100vw + 100%) / 2);
+        padding: 20px 0;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        max-height: 100%;
+    }
+
+    .infos__content__photo img{
+        width: 100vw; 
+        margin-left: calc((-100vw + 100%) / 2);
+        margin-right: calc((-100vw + 100%) / 2);
+        border-radius: 0;
+        min-height: 350px;
+    }
+
+    .infos__content__centered {
+        margin-bottom: 40px;
     }
 }
 
