@@ -728,7 +728,7 @@ section {
     }
 
     section {
-        max-width: 85%!important;
+        padding: 10px;
     }
 
     h1 {
@@ -838,6 +838,10 @@ section {
 
     .infos__content__centered {
         margin-bottom: 40px;
+    }
+
+    .text-reversed {
+        margin-left: 0;
     }
 }
 
