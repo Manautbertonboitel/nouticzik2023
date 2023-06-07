@@ -348,7 +348,7 @@ a:hover .feather-facebook {
 
 /* Mobile phone - small device width */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .header__main__navs__button__container {
         display: flex;
     }
@@ -361,6 +361,13 @@ a:hover .feather-facebook {
         display: none;
     }
 }
+
+/* @media (min-width: 1001px) {
+    .header__main__navs--collapse {
+        opacity: 0;
+        visibility: hidden;
+    }
+} */
 
 /* extra small device width */
 
