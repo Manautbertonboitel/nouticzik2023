@@ -30,13 +30,17 @@ header {
 }
 
 .header__main__title {
-    font-size: 34px;
+    /* font-size: 34px;
     text-decoration: none;
     color: var(--color-quaternary);
-    font-weight: 900;
+    font-weight: 900; */
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header__main__title img {
     width: 100px;
 }
 
