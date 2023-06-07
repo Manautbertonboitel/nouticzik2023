@@ -764,6 +764,8 @@ section {
     section {
         margin: 25px 15px;
     }
+    
+
 
     h1 {
         font-size: 60px!important;
@@ -919,6 +921,11 @@ section {
 
     .text-reversed {
         margin-left: 0;
+    }
+
+    p, ul {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
