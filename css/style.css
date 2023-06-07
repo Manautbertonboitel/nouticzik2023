@@ -44,7 +44,7 @@ p {
 }
 
 main {
-    display: flex;
+    display: flex!important;
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,7 @@ main {
 }
 
 section {
+    width: 100%;
     max-width: 1088px;
     margin: 25px 20px;
 }
