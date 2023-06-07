@@ -762,7 +762,7 @@ section {
     }
 
     section {
-        margin: 25px 15px;
+        margin: 25px 15px!important;
     }
     
 
@@ -924,8 +924,8 @@ section {
     }
 
     p, ul {
-        margin-left: 10px!important;
-        margin-right: 10px!important;
+        margin-left: 15px!important;
+        margin-right: 15px!important;
     }
 }
 
