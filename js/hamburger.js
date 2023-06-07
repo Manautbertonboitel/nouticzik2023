@@ -33,18 +33,28 @@ toggle3.addEventListener("click", function() {
     body.classList.toggle("no-scroll");
 });
 
-toggle4.addEventListener("click", function() {
-    // Toggle class "is-active" && "open"
-    header.classList.toggle("navs--collapse--open");
-    body.classList.toggle("no-scroll");
-});
+// toggle4.addEventListener("click", function() {
+//     // Toggle class "is-active" && "open"
+//     header.classList.toggle("navs--collapse--open");
+//     body.classList.toggle("no-scroll");
+// });
 
-window.addEventListener('resize', function() {
+// window.addEventListener('resize', function() {
+//     var w = window.innerWidth;
+//     debug("msg")
+//     console.log("msg");
+//     if (w > 1000) {
+//         header.classList.remove("navs--collapse--open");
+//         body.classList.remove("no-scroll");
+//     }
+// });
+
+function reportWindowSize() {
     var w = window.innerWidth;
-    debug("msg")
-    console.log("msg");
     if (w > 1000) {
         header.classList.remove("navs--collapse--open");
         body.classList.remove("no-scroll");
     }
-});
+}
+
+window.onresize = reportWindowSize;

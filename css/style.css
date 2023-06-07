@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Bethlehem';
+    src: url('../fonts/Bethlelem/bethlehem-jeod9-webfont.woff2') format('woff2'),
+         url('../fonts/Bethlelem/bethlehem-jeod9-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
     transition: all .1s ease-out;
 
 
@@ -14,6 +22,7 @@
     --font-size-subtitle: 32px;
     --font-size-text: 16px;
     --font-size-text-uppercase: 14px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -21,12 +30,17 @@ body {
     background-color: var(--color-quaternary);
 }
 
+h1, h2, h3 {
+    font-family: 'Bebas Neue', 'Alef', 'Roboto', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
 span {
     font-weight: 700;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 main {
@@ -46,14 +60,41 @@ section {
 /* SECTION Hero */
 
 #hero {
-    margin-top: 100px;
+    /* margin-top: 130px; */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-quaternary);
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: 700;
+
+    margin: 0;
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
+#hero #BackgroundVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+    z-index: -3;
+
+    filter: brightness(50%);
+
+    background-color: #282828;
+}
 .hero__container {
-    max-width: 1088px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .hero__content {
@@ -63,12 +104,19 @@ section {
     align-items: center;
 }
 
+.hero__content img {
+    width: 100%;
+    max-width: 550px;
+}
+
 .hero__content h1 {
     font-size: 80px;
     text-transform: uppercase;
     text-align: center;
     margin: 80px 0 0;
     color: var(--color-tertiary);
+
+    font-family: 'Bethlehem';
 }
 
 .hero__content h2 {
@@ -77,24 +125,25 @@ section {
     text-transform: uppercase;
     margin: 0;
     text-align: center;
-
-    background: rgb(255,77,0);
-    /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
+    z-index: 100;
+    color: #faf185;
+    
+    /* background: rgb(255,77,0);
+    background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background-size:5000% 100%;
     animation: background-gradient 40s linear infinite;
-    animation-direction: alternate; */
-
+    animation-direction: alternate;
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: transparent; */
 }
 
 .hero__content p {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 536px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .hero__content__tickets {
@@ -136,17 +185,6 @@ section {
 
 .hero__content__tickets:hover svg g line {
     stroke: var(--color-primary);
-}
-
-#hero {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero__container {
-    max-width: 1088px;
 }
 
 /* Link to prog section */
