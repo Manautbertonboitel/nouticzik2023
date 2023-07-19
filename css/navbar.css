@@ -24,7 +24,8 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1088px;
+    /* max-width: 1088px; */
+    max-width: 1200px;
     height: 65px;
     margin: auto;
 }
@@ -50,7 +51,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 450px;
+    max-width: 580px;
 }
 
 .header__main__navs a {
@@ -62,7 +63,7 @@ header {
     vertical-align: middle;
 }
 
-.header__main__navs a::before {
+.header__main__navs a:not(:first-child)::before {
     position: relative;
 
     display: block;

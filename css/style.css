@@ -53,7 +53,7 @@ main {
 
 section {
     width: 100%;
-    max-width: 1088px;
+    max-width: 1200px;
     margin: 25px 20px;
 }
 
@@ -86,7 +86,7 @@ section {
     height: 100%;
     z-index: -3;
 
-    filter: brightness(50%);
+    filter: brightness(40%);
 
     background-color: #282828;
 }
@@ -149,7 +149,6 @@ section {
 
 .hero__content__tickets {
     padding: 13.5px 25px 11px;
-    background-color: var(--color-tertiary);
     border-radius: 2000px;
     text-transform: uppercase;
     text-align: center;
@@ -178,9 +177,8 @@ section {
 }
 
 .hero__content__tickets:hover {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--color-primary);
+    background-color: transparent;
     border: 1px solid var(--color-primary);
 }
 
@@ -191,7 +189,7 @@ section {
 /* Link to prog section */
 
 #lineuplink {
-    max-width: 1088px;
+    max-width: 1200px;
 }
 
 .lineuplink__outline {
@@ -254,7 +252,7 @@ section {
 }
 
 .presentation__container {
-    max-width: 1088px;
+    max-width: 1200px;
 }
 
 .presentation__title h1 {
@@ -447,7 +445,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     /* width: 100%; */
-    max-width: 1088px;
+    max-width: 1200px;
 }
 
 /* .programmation__content__showcase__item {
@@ -492,10 +490,12 @@ section {
     background-color: var(--color-primary);
     font-family: none!important;
     margin: 5vw;
+    backdrop-filter: blur(30px);
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: transparent!important;
+    /* background-color: #ff54109a!important; */
+    /* background-color: transparent!important; */
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -503,11 +503,11 @@ section {
 }
 
 .programmation__content__showcase__item {
-    width: 270px!important;
+    width: 296px!important;
     aspect-ratio: 1 / 1.41;
     border: 1px solid var(--color-tertiary);
     border-radius: 25px;
-    padding: 20px;
+    padding: 12px;
     margin: 0 10px;
     text-transform: uppercase;
     display: flex;
@@ -722,6 +722,10 @@ section {
     stroke: var(--color-primary)
 }
 
+.horairestransgironde {
+    color: var(--color-primary)
+}
+
 .infos__content__maps {
     padding: 13.5px 25px 11px;
     background-color: var(--color-tertiary);
@@ -788,6 +792,43 @@ section {
     width: 100%;
 }
 
+footer {
+    padding: 100px 20px;
+    background-image: url(../img/video/Capture\ d’écran\ 2023-06-10\ 141542-min.png);
+    background-size: cover;
+    background-position: center;
+
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-quaternary);
+    text-align: center;
+}
+
+.footer__logos {
+    display: flex;
+    margin: 50px 0;
+}
+
+.footer__logos img {
+    width: 200px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-tertiary);
+    color: var(--color-quaternary);
+    padding: 0;
+    margin: 0;
+}
+
+.copyright p {
+    margin: 5px;
+}
 
 /* || ANIMATIONS */
 
@@ -870,11 +911,13 @@ section {
 
     .presentation__content__photos__outline {
         width: 100vw; 
-        max-height: 250px;
+        max-height: 290px;
         margin-left: calc((-100vw + 100%) / 2);
         margin-right: calc((-100vw + 100%) / 2);
         border-radius: 0;
         border: none;
+        border-top: solid 30px var(--color-primary);
+        border-bottom: solid 30px var(--color-primary);
         padding: 0;
 
         overflow: hidden;
@@ -956,12 +999,14 @@ section {
         margin-right: calc((-100vw + 100%) / 2);
         padding: 10px 0;
         border-radius: 0;
-        border-left: none;
-        border-right: none;
+        border: none;
+        border-top: solid 30px var(--color-primary);
+        border-bottom: solid 26px var(--color-primary);
         max-height: 100%;
 
+        background-color: var(--color-primary);
+
         padding: 0;
-        border: none;
 
         margin-top: 35px;
         margin-bottom: 0;
