@@ -586,7 +586,7 @@ section {
 }
 
 .programmation__content__showcase__item__integration a:hover {
-    background-color: rgb(212, 212, 212);
+    background-color: var(--color-tertiary);
 }
 
 /* Infos section (date, localisation, etc.) */
