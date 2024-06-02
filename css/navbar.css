@@ -66,6 +66,8 @@ header {
     color: var(--color-quaternary);
     font-weight: 700;
     vertical-align: middle;
+    font-size: var(--text-size-secondary);
+    line-height: var(--text-size-secondary);
 }
 
 /* Hover with Ticket button */
@@ -406,17 +408,4 @@ a:hover .feather-facebook {
     /* .header__comment {
         display: none;
     } */
-}
-
-/* @media (min-width: 1001px) {
-    .header__main__navs--collapse {
-        opacity: 0;
-        visibility: hidden;
-    }
-} */
-
-/* extra small device width */
-
-@media (max-width: 600px) {
-
 }
