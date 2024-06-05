@@ -50,13 +50,13 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 
     /* Width with ticket button */
-    max-width: 580px;
+    /* max-width: 680px; */
 
     /* Width without ticket button */
-    max-width: 450px;
+    /* max-width: 450px; */
 }
 
 .header__main__navs a {
@@ -72,7 +72,32 @@ header {
 
 /* Hover with Ticket button */
 
-/* .header__main__navs a:not(:first-child)::before {
+.header__main__navs a:not(:first-child)::before {
+    position: relative;
+
+    display: block;
+    left: 3px;
+    bottom: -23px;
+    height: 1px;
+    width: 98%;
+
+    content: '';
+
+    border-radius: 2px;
+
+    background: linear-gradient(to right, var(--color-quaternary) 0%, var(--color-quaternary) 100%);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms cubic-bezier(0, .61, .28, .92);
+}
+
+.header__main__navs a:not(:first-child) {
+    margin-left: var(--general-margin);
+}
+
+/* Hover without Ticket button */
+/* .header__main__navs a::before {
     position: relative;
 
     display: block;
@@ -91,27 +116,6 @@ header {
     transform-origin: left;
     transition: transform 500ms cubic-bezier(0, .61, .28, .92);
 } */
-
-/* Hover without Ticket button */
-.header__main__navs a::before {
-    position: relative;
-
-    display: block;
-    left: 3px;
-    bottom: -23px;
-    height: 1px;
-    width: 98%;
-
-    content: '';
-
-    border-radius: 2px;
-
-    background: linear-gradient(to right, var(--color-quaternary) 0%, var(--color-quaternary) 100%);
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 500ms cubic-bezier(0, .61, .28, .92);
-}
 
 /* .header__main__navs a:not(:first-child):hover::before {
     transform: scaleX(1);
@@ -200,7 +204,9 @@ a:hover .feather-facebook {
     stroke: url(#linear2);
 }
 
-/* .header__main__navs--collapse .header__main__navs__tickets {
+
+/* TO UNCOMMENT IF THERE IS A TICKET BUTTON  */
+.header__main__navs--collapse .header__main__navs__tickets {
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
 
@@ -216,7 +222,7 @@ a:hover .feather-facebook {
     background-color: var(--color-quaternary);
     border-radius: 2000px;
     border: 1px solid var(--color-quaternary);
-} */
+}
 
 
 
@@ -242,7 +248,7 @@ a:hover .feather-facebook {
     font-weight: 700;
     vertical-align: middle;
 
-    margin-right: 10px;
+    margin-right: var(--general-margin);
 }
 
 .header__main__navs__button__container .header__main__navs__tickets svg {

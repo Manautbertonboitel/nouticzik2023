@@ -32,10 +32,12 @@
 
     --outer-border-radius: 30px;
     --inner-border-radius: calc(var(--outer-border-radius) - var(--general-padding));
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-quaternary);
+    
 }
 
 h1, h2, h3 {
@@ -65,6 +67,13 @@ section {
     /* max-width: 1200px; */
     /* margin: 25px 20px; */
 
+}
+
+.anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -125px; /*same height as header*/
+    visibility: hidden;
 }
 
 /* SECTION Hero */
@@ -139,6 +148,7 @@ section {
 .hero__content h2 {
     font-size: var(--font-size-subtitle);
     line-height: var(--font-size-subtitle);
+    font-weight: 500;
     text-transform: uppercase;
     margin: 0;
     text-align: center;

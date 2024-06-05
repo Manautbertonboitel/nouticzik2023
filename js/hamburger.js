@@ -33,6 +33,12 @@ toggle3.addEventListener("click", function() {
     body.classList.toggle("no-scroll");
 });
 
+toggle4.addEventListener("click", function() {
+    // Toggle class "is-active" && "open"
+    header.classList.toggle("navs--collapse--open");
+    body.classList.toggle("no-scroll");
+});
+
 function reportWindowSize() {
     var w = window.innerWidth;
     if (w > 1000) {
