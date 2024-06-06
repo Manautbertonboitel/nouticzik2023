@@ -893,7 +893,7 @@ footer {
     }
 
     section {
-        width: calc(100vw - calc(var(--general-margin) * 4));
+        width: calc(100vw - calc(var(--general-margin) * 2));
     }
 
     h1 {
