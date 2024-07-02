@@ -31,19 +31,19 @@ const swiper = new Swiper('.swiper', {
     // },
     breakpoints: {
         2100: {
-            slidesPerView: 7,
+            slidesPerView: 2,
           },
         1788: {
-            slidesPerView: 6,
+            slidesPerView: 2,
           },
         1488: {
-            slidesPerView: 5,
+            slidesPerView: 2,
         },
         1200: {
-            slidesPerView: 4,
+            slidesPerView: 2,
           },
         930: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
         630: {
           slidesPerView: 2,
