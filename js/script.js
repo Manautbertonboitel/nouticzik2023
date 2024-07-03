@@ -30,23 +30,20 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // },
     breakpoints: {
-        2100: {
-            slidesPerView: 2,
-          },
-        1788: {
-            slidesPerView: 2,
-          },
-        1488: {
-            slidesPerView: 2,
+        2200: {
+            slidesPerView: 6,
         },
-        1200: {
+        1850: {
+            slidesPerView: 5,
+        },
+        1500: {
+            slidesPerView: 4,
+        },
+        1150: {
+            slidesPerView: 3,
+        },
+        750: {
             slidesPerView: 2,
-          },
-        930: {
-            slidesPerView: 2,
-          },
-        630: {
-          slidesPerView: 2,
         },
       },
   });
