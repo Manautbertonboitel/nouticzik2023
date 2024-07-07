@@ -4,19 +4,27 @@
 // });
 
 const swiper = new Swiper('.swiper', {
+    // effect: "panorama",
     allowSlideNext: true,
     allowSlidePrev: true,
     allowTouchMove: true,
     centeredSlides: true,
-
-    slidesPerView: 1,
-    // Optional parameters
-    direction: 'horizontal',
+    // slidesPerView: "auto",
     loop: true,
-  
-    // If we need pagination
+    slidesPerView: 1,
+    direction: 'horizontal',
+    
+    // Pagination
     // pagination: {
     //   el: '.swiper-pagination',
+    //   dynamicBullets: true,
+    //   dynamicMainBullets: 3,
+    // },
+
+    // Effect
+    // panoramaEffect: {
+    //   depth: 150,
+    //   rotate: 45
     // },
   
     // Navigation arrows
@@ -25,25 +33,27 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
+    // Scrollbar
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
+
+    //Breakpoints
     breakpoints: {
-        2200: {
-            slidesPerView: 6,
-        },
-        1850: {
-            slidesPerView: 5,
-        },
-        1500: {
-            slidesPerView: 4,
-        },
-        1150: {
-            slidesPerView: 3,
-        },
-        750: {
-            slidesPerView: 2,
-        },
+      2200: {
+          slidesPerView: 6,
       },
+      1850: {
+          slidesPerView: 5,
+      },
+      1500: {
+          slidesPerView: 4,
+      },
+      1150: {
+          slidesPerView: 3,
+      },
+      750: {
+          slidesPerView: 2,
+      },
+    },
   });
