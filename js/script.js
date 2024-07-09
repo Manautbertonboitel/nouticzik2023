@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
     allowTouchMove: true,
     centeredSlides: true,
     // slidesPerView: "auto",
-    loop: true,
+    // loop: true,
     slidesPerView: 1,
     direction: 'horizontal',
     
