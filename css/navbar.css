@@ -1,4 +1,4 @@
-header {
+header  { 
     text-transform: uppercase;
     position: sticky;
     width: 100%;
@@ -6,18 +6,20 @@ header {
     z-index: 1000;
 }
 
-#header__container {
+
+#header__container  { 
     /* background-color: var(--color-tertiary); */
-    background: rgb(255,77,0);
+    background: var(--color-primary);
     background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
-    background-size:5000% 100%;
-    animation: background-gradient 40s linear infinite;
+    background-size: 5000% 100%;
+    animation: background-gradient 100s linear infinite;
     animation-direction: alternate;
 }
 
-.header__main {
+
+.header__main  { 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -30,7 +32,8 @@ header {
     padding: 20px;
 }
 
-.header__main__title {
+
+.header__main__title  { 
     /* font-size: 34px;
     text-decoration: none;
     color: var(--color-quaternary);
@@ -41,11 +44,13 @@ header {
     align-items: center;
 }
 
-.header__main__title img {
+
+.header__main__title img  { 
     width: 100px;
 }
 
-.header__main__navs {
+
+.header__main__navs  { 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -59,7 +64,8 @@ header {
     /* max-width: 450px; */
 }
 
-.header__main__navs a {
+
+.header__main__navs a  { 
     font-size: 14px;
     text-decoration: none;
     text-align: center;
@@ -70,9 +76,10 @@ header {
     line-height: var(--text-size-secondary);
 }
 
-/* Hover with Ticket button */
 
-.header__main__navs a:not(:first-child)::before {
+/* Hover underlign applied to all navbar links except the first two elements (with Ticket & donation button) */
+
+.header__main__navs a:nth-child(n+3)::before  { 
     position: relative;
 
     display: block;
@@ -92,12 +99,14 @@ header {
     transition: transform 500ms cubic-bezier(0, .61, .28, .92);
 }
 
-.header__main__navs a:not(:first-child) {
+
+.header__main__navs a:not(:first-child)  { 
     margin-left: var(--general-margin);
 }
 
-/* Hover without Ticket button */
-/* .header__main__navs a::before {
+
+/* Hover underlign applied to all navbar links (without Ticket button) */
+/* .header__main__navs a::before  { 
     position: relative;
 
     display: block;
@@ -115,45 +124,57 @@ header {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 500ms cubic-bezier(0, .61, .28, .92);
-} */
+}
+ */
 
-/* .header__main__navs a:not(:first-child):hover::before {
+/* .header__main__navs a:not(:first-child):hover::before  { 
     transform: scaleX(1);
-} */
+}
+ */
 
-.header__main__navs a:hover::before {
+.header__main__navs a:hover::before  { 
     transform: scaleX(1);
 }
 
-.header__main__navs__tickets {
+
+.header__main__navs__tickets  { 
     padding: 13.5px 25px 11px;
-    color: var(--color-tertiary)!important;
-    background-color: var(--color-quaternary);
+    color: var(--color-quaternary)!important;
+    background-color: transparent;
     border-radius: 2000px;
     border: 1px solid var(--color-quaternary);
 }
 
-.header__main__navs__tickets svg {
+
+.header__main__navs__tickets svg  { 
     position: absolute;
     width: 7px;
     height: 7px;
     margin-left: 3px;
 }
 
-.header__main__navs__tickets:hover, .header__main__navs__tickets:hover a {
-    /* background-color: rgb(212, 212, 212); */
-    background-color: transparent;
-    color: var(--color-quaternary)!important;
-}
 
-.header__main__navs__tickets:hover svg g line {
-    color: var(--color-quaternary)!important;
+.header__main__navs__tickets svg g line  { 
     stroke: var(--color-quaternary);
 }
 
+
+.header__main__navs__tickets:hover, .header__main__navs__tickets:hover a  { 
+    /* background-color: rgb(212, 212, 212); */
+    background-color: var(--color-quaternary);
+    color: var(--color-tertiary)!important;
+}
+
+
+.header__main__navs__tickets:hover svg g line  { 
+    color: var(--color-quaternary)!important;
+    stroke: var(--color-tertiary);
+}
+
+
 /* NAVBAR Collapsed */
 
-.header__main__navs--collapse {
+.header__main__navs--collapse  { 
     position: fixed;
     left: 0; 
     top: 0;
@@ -174,16 +195,19 @@ header {
     z-index: 300;
 }
 
-.header__main__navs--collapse ul {
+
+.header__main__navs--collapse ul  { 
     list-style-type: none;
     padding: 0;
 }
 
-.header__main__navs--collapse ul > li:not(:first-child) {
+
+.header__main__navs--collapse ul > li:not(:first-child)  { 
     margin-top: 20px;
 }
 
-.header__main__navs--collapse a {
+
+.header__main__navs--collapse a  { 
     position: relative;
 
     color: var(--color-tertiary);
@@ -192,7 +216,8 @@ header {
     text-decoration: none;
 }
 
-.header__main__navs--collapse a svg {
+
+.header__main__navs--collapse a svg  { 
     height: 40px;
     stroke: var(--color-tertiary);
     fill: transparent;
@@ -200,13 +225,15 @@ header {
     transition:200ms cubic-bezier(0, .61, .28, .92);
 }
 
-a:hover .feather-facebook {
+
+a:hover .feather-facebook  { 
     stroke: url(#linear2);
 }
 
 
+
 /* TO UNCOMMENT IF THERE IS A TICKET BUTTON  */
-.header__main__navs--collapse .header__main__navs__tickets {
+.header__main__navs--collapse .header__main__navs__tickets  { 
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
 
@@ -226,15 +253,17 @@ a:hover .feather-facebook {
 
 
 
+
 /* TICKETS ++ BUTTONS  */
 
-.header__main__navs__button__container {
+.header__main__navs__button__container  { 
     display: none;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__main__navs__button__container .header__main__navs__tickets {
+
+.header__main__navs__button__container .header__main__navs__tickets  { 
     padding: 13.5px 25px 11px;
     color: var(--color-tertiary)!important;
     background-color: var(--color-quaternary);
@@ -251,27 +280,31 @@ a:hover .feather-facebook {
     margin-right: var(--general-margin);
 }
 
-.header__main__navs__button__container .header__main__navs__tickets svg {
+
+.header__main__navs__button__container .header__main__navs__tickets svg  { 
     position: absolute;
     width: 7px;
     height: 7px;
     margin-left: 3px;
 }
 
-.header__main__navs__button__container .header__main__navs__tickets:hover, .header__main__navs__button__container .header__main__navs__tickets:hover a {
+
+.header__main__navs__button__container .header__main__navs__tickets:hover, .header__main__navs__button__container .header__main__navs__tickets:hover a  { 
     /* background-color: rgb(212, 212, 212); */
     background-color: transparent;
     color: var(--color-quaternary)!important;
 }
 
-.header__main__navs__button__container .header__main__navs__tickets:hover svg g line {
+
+.header__main__navs__button__container .header__main__navs__tickets:hover svg g line  { 
     color: var(--color-quaternary)!important;
     stroke: var(--color-quaternary);
 }
 
+
 /* NAVBAR Hamburger */
 
-.header__main__navs__button {
+.header__main__navs__button  { 
     height: 32px;
     transform: none;
     transition: transform 500ms cubic-bezier(0, .61, .28, .92);
@@ -279,7 +312,8 @@ a:hover .feather-facebook {
     z-index: 303;
 }
 
-.header__main__navs__button button{
+
+.header__main__navs__button button { 
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -291,7 +325,8 @@ a:hover .feather-facebook {
     padding: 0;
 }
 
-.button__stroke {
+
+.button__stroke  { 
     width: 32px;
     height: 3px;
 
@@ -304,49 +339,58 @@ a:hover .feather-facebook {
 
 }
 
-.button__stroke+.button__stroke {
+
+.button__stroke+.button__stroke  { 
     margin-top: 8px;
     transform-origin: center;
 }
+
 
 /* Hamburger animation */
 
 /* "navs--collapse--open" class applied when clicked on hamburger button */
 
-.navs--collapse--open .header__main__navs--collapse {
+.navs--collapse--open .header__main__navs--collapse  { 
     visibility: visible;
     opacity: 1;
 }
 
-.navs--collapse--open .button__stroke{
+
+.navs--collapse--open .button__stroke { 
     transform: rotate(45deg) translateY(-6.5px);
     background-color: var(--color-tertiary);
 }
 
-.navs--collapse--open .button__stroke+.button__stroke{
+
+.navs--collapse--open .button__stroke+.button__stroke { 
     transform: rotate(-45deg) translateY(-3px) translateX(3px);
     background-color: var(--color-tertiary);
 }
 
-.navs--collapse--open .cls-1 {
+
+.navs--collapse--open .cls-1  { 
     stroke: var(--color-tertiary)!important;
 }
 
-.navs--collapse--open .cls-2 {
+
+.navs--collapse--open .cls-2  { 
     fill: var(--color-tertiary)!important;
 }
 
+
 /* Disable scrolling when menu oppened */
 
-/* .no-scroll {
+/* .no-scroll  { 
     height: 100%; overflow: hidden;
-} */
+}
+ */
 
-.link--active a::before {
+.link--active a::before  { 
     transform: scaleX(1)!important;
 }
 
-.header__comment {
+
+.header__comment  { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,12 +402,14 @@ a:hover .feather-facebook {
     padding: 10px;
 }
 
-.header__comment p {
+
+.header__comment p  { 
     line-height: normal;
     margin: 0;
 }
 
-/* .header__comment span {
+
+/* .header__comment span  { 
     background: rgb(255,77,0);
     background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
@@ -374,7 +420,8 @@ a:hover .feather-facebook {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-} */
+}
+ */
 
 
 
@@ -383,35 +430,47 @@ a:hover .feather-facebook {
 
 /* Background gradients */
 
-@-webkit-keyframes background-gradient {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
+@-webkit-keyframes background-gradient  { 
+    0% { background-position:0% 50%}
+
+    100% { background-position:100% 50%}
+
 }
 
-@-moz-keyframes background-gradient {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
+
+@-moz-keyframes background-gradient  { 
+    0% { background-position:0% 50%}
+
+    100% { background-position:100% 50%}
+
 }
 
-@keyframes background-gradient {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
+
+@keyframes background-gradient  { 
+    0% { background-position:0% 50%}
+
+    100% { background-position:100% 50%}
+
 }
+
 
 /* || MEDIA QUERIES */
 
 /* Mobile phone - small device width */
 
-@media (max-width: 1000px) {
-    .header__main__navs__button__container {
+@media (max-width: 1000px)  { 
+    .header__main__navs__button__container  { 
         display: flex;
     }
 
-    .header__main__navs {
+
+    .header__main__navs  { 
         display: none;
     }
 
-    /* .header__comment {
+
+    /* .header__comment  { 
         display: none;
-    } */
+    }
+ */
 }

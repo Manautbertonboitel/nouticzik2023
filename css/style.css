@@ -13,8 +13,10 @@
 
     /* VARIABLES */
 
-    --color-primary: #ff5410;
-    --color-secondary: #e88402;
+    /* --color-primary: #ff5410;
+    --color-secondary: #e88402; */
+    --color-primary: #b44ea8;
+    --color-secondary: #db6b33;
     --color-tertiary: #282828;
     --color-quaternary: #fffff4;
 
@@ -110,7 +112,7 @@ section {
     object-fit: cover;
     z-index: -3;
 
-    filter: brightness(40%);
+    filter: brightness(50%);
 
     background-color: #282828;
 }
@@ -353,7 +355,7 @@ section {
 
     border: 1px solid transparent;
 
-    background: rgb(255,77,0);
+    background: var(--color-primary);
     /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
@@ -693,7 +695,7 @@ section {
     margin: 0;
     margin-bottom: 35px;
 
-    background: rgb(255,77,0);
+    background: var(--color-primary);
     /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
@@ -735,7 +737,7 @@ section {
 
     border: 1px solid transparent;
 
-    background: rgb(255,77,0);
+    background: var(--color-primary);
     /* background: -moz-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: -webkit-linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
     background: linear-gradient(60deg, var(--color-primary) 0%, var(--color-secondary) 10%, var(--color-primary) 20%, var(--color-secondary) 30%, var(--color-primary) 40%, var(--color-secondary) 50%, var(--color-primary) 60%, var(--color-secondary) 70%, var(--color-primary) 80%, var(--color-primary) 90%, var(--color-secondary) 100%);
