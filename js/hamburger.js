@@ -1,6 +1,6 @@
 // Look for specified elements
 
-var hamburger = document.querySelector(".header__main__navs__button");
+var hamburger = document.querySelector(".hamburger");
 var header = document.querySelector("header");
 var body = document.querySelector("body");
 var toggle1 = document.querySelector(".toggle1");
