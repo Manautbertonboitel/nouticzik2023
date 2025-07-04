@@ -53,6 +53,10 @@ p {
     line-height: 1.4;
 }
 
+img {
+    display: block;
+}
+
 section {
     padding: 0 clamp(calc(var(--general-margin) * 2), calc(calc(100vw - var(--section-max-width)) / 2), 4000px);
     margin: calc(var(--general-margin) * 4) auto;
