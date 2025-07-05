@@ -141,7 +141,7 @@ header  {
     text-decoration: none;
 }
 
-.header__main__navs--collapse a svg  { 
+.header__main__navs--collapse a #Facebook, .header__main__navs--collapse a #Instagram  { 
     height: 40px;
     stroke: var(--color-quaternary);
     /* fill: transparent; */
