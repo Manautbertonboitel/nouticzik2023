@@ -14,10 +14,7 @@ hamburger.addEventListener("click", function() {
     // Toggle class "is-active" && "open"
     header.classList.toggle("navs--collapse--open");
     body.classList.toggle("no-scroll");
-    // 🧽 Forcer Safari à repaint
-    void menucollapsed.offsetHeight;
-    menucollapsed.style.backdropFilter = 'blur(50px) brightness(80%)';
-    menucollapsed.style.webkitBackdropFilter = 'blur(50px) brightness(80%)';
+
 });
 
 toggle1.addEventListener("click", function() {
