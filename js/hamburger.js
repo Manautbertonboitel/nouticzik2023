@@ -7,12 +7,17 @@ var toggle1 = document.querySelector(".toggle1");
 var toggle2 = document.querySelector(".toggle2");
 var toggle3 = document.querySelector(".toggle3");
 var toggle4 = document.querySelector(".toggle4");
+const menucollapsed = document.querySelector('.header__main__navs--collapse');
 
 // On click
 hamburger.addEventListener("click", function() {
     // Toggle class "is-active" && "open"
     header.classList.toggle("navs--collapse--open");
     body.classList.toggle("no-scroll");
+    // 🧽 Forcer Safari à repaint
+    void menucollapsed.offsetHeight;
+    menucollapsed.style.backdropFilter = 'blur(50px) brightness(80%)';
+    menucollapsed.style.webkitBackdropFilter = 'blur(50px) brightness(80%)';
 });
 
 toggle1.addEventListener("click", function() {
