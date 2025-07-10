@@ -9,11 +9,51 @@ header  {
 }
 
 #header__container  { 
-    backdrop-filter: blur(50px) brightness(80%);
+    backdrop-filter: blur(10px) saturate(150%) brightness(80%);
     margin: var(--general-margin) clamp(var(--general-margin), calc(calc(100vw - var(--header-max-width)) / 2), 4000px);
     border-radius: 100px;
-    border: .5px solid rgba(255, 255, 255, 0.336);
+    /* border: .5px solid rgba(255, 255, 255, 0.336); */
     width: 100%;
+}
+
+/* Border linear gradient (frosted glass effect) */
+#header__container:before {
+    content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 100px;
+	padding: 1px;
+	pointer-events: none;
+	background: linear-gradient(
+		178deg,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.25)
+	);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+}
+
+/* Frosted glass texture */
+.frosted {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.3;
+	pointer-events: none;
+	border-radius: 100px;
+	z-index: -1;
+	background: linear-gradient(
+			135deg,
+			rgba(255, 255, 255, 0.75),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("../img/noise.svg");
 }
 
 .header__main  { 
